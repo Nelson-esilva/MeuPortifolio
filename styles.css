@@ -15,6 +15,7 @@ header {
     position: relative;
     margin: 0 auto;
     max-width: 1200px; 
+    text-align: center
 }
 
 nav {
@@ -37,6 +38,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center
 }
 
 nav ul li {
@@ -129,7 +131,6 @@ section {
     overflow: hidden;
     margin: 0 auto;
     max-width: 1200px; /* Limitar a largura máxima */
-    background-color: #121212; /* Cor de fundo da faixa preta */
 }
 
 section:nth-child(even) {
@@ -252,6 +253,32 @@ footer {
     background: #6a0dad; /* Roxo escuro para o rodapé */
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
-    
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.social-media a {
+    color: #fff; /* Cor branca para os ícones */
+    text-decoration: none;
+}
+
+.social-media i {
+    font-size: 4em; /* Tamanho dos ícones igual ao dos ícones das tecnologias */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-media i:hover {
+    color: #8a2be2; /* Cor roxa para o hover nos ícones */
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
