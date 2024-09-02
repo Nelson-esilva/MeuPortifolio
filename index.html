@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Nelson Emeliano Silva</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que o site seja responsivo em diferentes dispositivos -->
+    <title>Portfólio - Nelson Emeliano Silva</title> <!-- Título da página exibido na aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Inclui o arquivo CSS para estilização -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Inclui a biblioteca Font Awesome para ícones -->
 </head>
 <body>
     <header>
+        <!-- Seção de cabeçalho do site, que geralmente contém o menu de navegação e o conteúdo principal -->
         <nav>
-            <div class="container">
-                <h1>Nelson Emeliano Silva</h1>
+            <div class="container"> <!-- Container para centralizar o conteúdo e manter a consistência -->
+                <h1>Nelson Emeliano Silva</h1> <!-- Nome do portfólio, exibido em destaque -->
                 <ul>
+                    <!-- Menu de navegação com links para as seções da página -->
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#projetos">Projetos</a></li>
@@ -22,22 +24,24 @@
             </div>
         </nav>
         <div class="hero">
+            <!-- Seção principal de destaque (hero) com uma mensagem introdutória -->
             <div class="hero-content">
-                <h2>Olá, sou Nelson Silva</h2>
-                <p>Desenvolvedor Web apaixonado por criar soluções inovadoras.</p>
-                <a href="#contato" class="btn">Entre em Contato</a>
+                <h2>Olá, sou Nelson Silva</h2> <!-- Saudações e apresentação pessoal -->
+                <p>Desenvolvedor Web apaixonado por criar soluções inovadoras.</p> <!-- Breve descrição do perfil profissional -->
+                <a href="#contato" class="btn">Entre em Contato</a> <!-- Botão para direcionar ao formulário de contato -->
             </div>
         </div>
     </header>
 
     <section id="sobre" class="container">
+        <!-- Seção "Sobre Mim", onde o visitante pode conhecer mais sobre o perfil -->
         <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor em inicio de carreira, mas já tive a oportunidade de atuar em empresas multinacionais, onde aprendi a trabalhar em equipe e a utilizar ferramentas de gestão essenciais para o desenvolvimento de projetos. Minha trajetória inclui diversos projetos de iniciação científica nas áreas de programação web, sistemas embarcados e visão computacional, o que me proporcionou uma base sólida e uma visão ampla das tecnologias atuais.
-
-            Fora do ambiente de trabalho, sou apaixonado por RPGs, leitura e frequentar a academia. Esses hobbies me ajudam a manter o equilíbrio e a criatividade, além de serem fontes de inspiração e aprendizado contínuo.</p>
+        <p>Sou um desenvolvedor em início de carreira, mas já tive a oportunidade de atuar em empresas multinacionais, onde aprendi a trabalhar em equipe e a utilizar ferramentas de gestão essenciais para o desenvolvimento de projetos. Minha trajetória inclui diversos projetos de iniciação científica nas áreas de programação web, sistemas embarcados e visão computacional, o que me proporcionou uma base sólida e uma visão ampla das tecnologias atuais.</p>
+        <p>Fora do ambiente de trabalho, sou apaixonado por RPGs, leitura e frequentar a academia. Esses hobbies me ajudam a manter o equilíbrio e a criatividade, além de serem fontes de inspiração e aprendizado contínuo.</p>
     </section>
 
     <section id="formacao" class="container">
+        <!-- Seção "Formação", que detalha a educação e idiomas -->
         <h2>Formação Educacional e Idiomas</h2>
         <p><strong>Formação:</strong> Graduação em Andamento em Engenharia Eletrônica pela Universidade Estadual do Amazonas.</p>
         <p><strong>Formação:</strong> Graduação em Andamento em Análise e Desenvolvimento de Sistemas pela Uninter.</p>
@@ -45,8 +49,10 @@
     </section>
 
     <section id="habilidades" class="container">
+        <!-- Seção "Habilidades" onde são listadas as competências técnicas -->
         <h2>Habilidades</h2>
         <div class="skills">
+            <!-- Cada habilidade é representada por um ícone e um título -->
             <div class="skill">
                 <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
                     <i class="fab fa-html5" style="color: #E34F26;"></i>
@@ -99,13 +105,14 @@
     </section>
 
     <section id="projetos" class="container">
+        <!-- Seção "Projetos" apresentando alguns dos trabalhos realizados -->
         <h2>Projetos</h2>
         <div class="project">
-            <img src="explastic.png" alt="Projeto 1">
+            <img src="explastic.png" alt="Projeto 1"> <!-- Imagem do projeto -->
             <div class="project-info">
                 <h3>Site para Controle de Produção</h3>
                 <p>Descrição do projeto 1. Destaque para as tecnologias usadas e o que foi alcançado.</p>
-                <a href="https://github.com/Nelson-esilva/Tela-de-login-HTML.git">Link do Projeto</a>
+                <a href="https://github.com/Nelson-esilva/Tela-de-login-HTML.git">Link do Projeto</a> <!-- Link para o repositório do projeto -->
             </div>
         </div>
         <div class="project">
@@ -127,6 +134,7 @@
     </section>
 
     <section id="contato" class="container">
+        <!-- Seção "Contato" com um formulário para enviar mensagens -->
         <h2>Contato</h2>
         <form>
             <label for="nome">Nome:</label>
@@ -138,13 +146,15 @@
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" required></textarea>
             
-            <button type="submit" class="btn">Enviar</button>
+            <button type="submit" class="btn">Enviar</button> <!-- Botão para enviar o formulário -->
         </form>
     </section>
 
     <footer>
+        <!-- Rodapé do site com direitos autorais e links para redes sociais -->
         <p>&copy; 2024 Nelson Emeliano Silva. Todos os direitos reservados.</p>
         <div class="social-media">
+            <!-- Links para perfis sociais com ícones -->
             <a href="https://www.linkedin.com/in/nelson-emeliano-b09576133?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkjsqqWbITkq1jSjQ5CiS2w%3D%3D" target="_blank" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>

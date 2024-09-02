@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* Estilo geral do corpo da página */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,28 +7,29 @@ body {
     background: #121212; /* Fundo geral escuro */
 }
 
+/* Estilo do cabeçalho */
 header {
-    background: #6a0dad; /* Roxo escuro para o cabeçalho */
+    background: #6a0dad; /* Roxo escuro */
     color: #fff;
     padding: 20px;
-    position: relative;
     margin: 0 auto;
-    max-width: 1200px; 
-    text-align: center
+    max-width: 1200px;
+    text-align: center;
 }
 
+/* Estilo da navegação */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 3px solid #8a2be2; /* Linha roxa para destacar o menu */
-    background: #3d3d3d; /* Fundo mais escuro para o menu */
+    border-bottom: 3px solid #8a2be2; /* Linha roxa */
+    background: #3d3d3d; /* Fundo escuro */
 }
 
 nav h1 {
     margin: 0;
-    font-size: 1.8em; /* Aumentar o tamanho do título */
+    font-size: 1.8em;
     color: #fff;
 }
 
@@ -38,7 +38,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 nav ul li {
@@ -47,17 +47,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #e0b3e1; /* Roxo claro para o texto */
+    color: #e0b3e1; /* Roxo claro */
     text-decoration: none;
-    font-size: 1.2em; /* Aumentar o tamanho da fonte dos links */
+    font-size: 1.2em;
     padding: 5px 10px;
     border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s; /* Transição suave para hover */
 }
 
 nav ul li a:hover {
-    background: #6a0dad; /* Roxo escuro para o fundo do hover */
-    color: #fff; /* Texto branco no hover */
+    background: #6a0dad; /* Roxo escuro */
+    color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
 }
 
@@ -68,17 +68,18 @@ nav ul li a::after {
     left: 0;
     width: 100%;
     height: 3px;
-    background: #1e1e1e; /* Barra roxa para indicar o item ativo */
-    transform: scaleX(0);
+    background: #1e1e1e; /* Barra escura */
+    transform: scaleX(0); /* Inicialmente invisível */
     transform-origin: bottom right;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Transição suave para a barra */
 }
 
 nav ul li a:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(1); /* Aparece ao passar o mouse */
     transform-origin: bottom left;
 }
 
+/* Estilo da seção hero */
 .hero {
     background: url('capa.png') no-repeat center center/cover;
     background-blend-mode: overlay; /* Modo de mistura para controlar a transparência */
@@ -88,14 +89,13 @@ nav ul li a:hover::after {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    min-height: 400px; /* Ajuste a altura mínima conforme necessário */
-    position: relative;
+    min-height: 400px;
     margin: 0 auto;
-    max-width: 1200px; /* Limitar a largura máxima */
+    max-width: 1200px;
 }
 
 .hero-content {
-    max-width: 600px; /* Ajuste a largura conforme necessário */
+    max-width: 600px;
 }
 
 .hero-content h2 {
@@ -109,6 +109,7 @@ nav ul li a:hover::after {
     margin: 20px 0;
 }
 
+/* Estilo do botão */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -116,25 +117,26 @@ nav ul li a:hover::after {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s; /* Transição suave para o hover */
 }
 
 .btn:hover {
-    background: #6a0dad; /* Roxo escuro para hover */
+    background: #6a0dad; /* Roxo escuro */
 }
 
+/* Estilo das seções */
 section {
     padding: 40px 20px;
-    background: #1e1e1e; /* Fundo escuro para seções */
-    border-bottom: 5px solid #6a0dad; /* Linha roxa para separar seções */
+    background: #1e1e1e; /* Fundo escuro */
+    border-bottom: 5px solid #6a0dad; /* Linha roxa */
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    max-width: 1200px; /* Limitar a largura máxima */
+    max-width: 1200px;
 }
 
 section:nth-child(even) {
-    background: #2c2c2c; /* Alternar fundo para seções pares */
+    background: #2c2c2c; /* Fundo alternado para seções pares */
 }
 
 section::before, section::after {
@@ -148,17 +150,18 @@ section::before, section::after {
 }
 
 section::before {
-    left: -50px; /* Ajuste para alinhar com a faixa preta */
+    left: -50px;
     background-color: rgba(106, 13, 173, 0.6); /* Roxo semi-transparente */
     clip-path: polygon(0 0, 100% 0, 0 100%); /* Triângulo na lateral esquerda */
 }
 
 section::after {
-    right: -50px; /* Ajuste para alinhar com a faixa preta */
+    right: -50px;
     background-color: rgba(106, 13, 173, 0.6); /* Roxo semi-transparente */
     clip-path: polygon(100% 0, 100% 100%, 0 100%); /* Triângulo na lateral direita */
 }
 
+/* Estilo do container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -166,6 +169,7 @@ section::after {
     z-index: 2;
 }
 
+/* Estilo das habilidades */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -176,7 +180,7 @@ section::after {
     flex: 1 1 150px;
     margin: 10px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para o hover */
 }
 
 .skill a {
@@ -189,21 +193,21 @@ section::after {
 
 .skill i {
     font-size: 4em;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill h3 {
     margin-top: 10px;
     font-size: 1.2em;
-    color: #6a0dad; /* Cor roxa para o texto */
+    color: #6a0dad; /* Cor roxa */
 }
 
 .skill a:hover i, .skill a:hover h3 {
     color: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
 }
 
+/* Estilo dos projetos */
 .project {
     display: flex;
     margin-bottom: 20px;
@@ -218,6 +222,7 @@ section::after {
     max-width: 600px;
 }
 
+/* Estilo do formulário */
 form {
     display: flex;
     flex-direction: column;
@@ -225,12 +230,12 @@ form {
 
 form label {
     margin: 10px 0 5px;
-    color: #6a0dad; /* Cor roxa para os labels */
+    color: #6a0dad; /* Cor roxa */
 }
 
 form input, form textarea {
     padding: 10px;
-    border: 1px solid #6a0dad; /* Borda roxa para inputs e textarea */
+    border: 1px solid #6a0dad; /* Borda roxa */
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -242,15 +247,16 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s; /* Transição suave para o hover */
 }
 
 form button:hover {
-    background: #6a0dad; /* Roxo escuro para hover */
+    background: #6a0dad; /* Roxo escuro */
 }
 
+/* Estilo do rodapé */
 footer {
-    background: #6a0dad; /* Roxo escuro para o rodapé */
+    background: #6a0dad; /* Roxo escuro */
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -261,6 +267,7 @@ footer p {
     font-size: 1em;
 }
 
+/* Estilo das redes sociais */
 .social-media {
     display: flex;
     justify-content: center;
@@ -269,16 +276,16 @@ footer p {
 }
 
 .social-media a {
-    color: #fff; /* Cor branca para os ícones */
+    color: #fff; /* Cor dos ícones */
     text-decoration: none;
 }
 
 .social-media i {
-    font-size: 4em; /* Tamanho dos ícones igual ao dos ícones das tecnologias */
-    transition: color 0.3s, transform 0.3s;
+    font-size: 4em; /* Tamanho dos ícones */
+    transition: color 0.3s, transform 0.3s; /* Transição suave para hover */
 }
 
 .social-media i:hover {
-    color: #8a2be2; /* Cor roxa para o hover nos ícones */
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    color: #8a2be2; /* Cor roxa para hover */
+    transform: scale(1.1); /* Efeito de zoom */
 }
