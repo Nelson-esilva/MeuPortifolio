@@ -113,6 +113,8 @@ export const Education = () => {
                       <span className={`px-2 py-0.5 text-[10px] font-mono rounded-full border ${
                         degree.status === 'active'
                           ? 'border-neon-green/40 text-neon-green bg-neon-green/5'
+                          : degree.status === 'completed'
+                          ? 'border-blue-400/40 text-blue-400 bg-blue-400/5'
                           : 'border-dark-border text-text-muted'
                       }`}>
                         {status.label}
