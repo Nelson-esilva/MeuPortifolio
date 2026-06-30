@@ -69,9 +69,9 @@ const PROJECTS = [
     title: 'ShopFlow MES - Manufacturing Execution System',
     description:
       'Sistema MES/MOM open-source para gestão e monitoramento de produção industrial em tempo real. Integra coleta de dados do chão de fábrica, rastreamento de ordens, análise de defeitos e dashboards analíticos via OLAP.',
-    image: '/project-mes.jpg',
-    tags: ['Django', 'React', 'PostgreSQL', 'ClickHouse', 'Kafka', 'Docker'],
-    githubUrl: 'https://github.com/Nelson-esilva/shopflow-devops',
+    image: '/shopflwmes.png',
+    tags: ['Django', 'React', 'PostgreSQL', 'ClickHouse', 'Docker'],
+    githubUrl: 'https://github.com/Nelson-esilva/Shopflow-MES',
     imageFit: 'cover' as const,
   },
 ];
