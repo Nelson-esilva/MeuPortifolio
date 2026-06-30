@@ -56,6 +56,16 @@ const PROJECTS = [
     githubUrl: 'https://github.com/Nelson-esilva/Research-MultiAgentSystem',
   },
   {
+    title: 'FinControl - Controle Financeiro',
+    description:
+      'Aplicação fullstack de controle financeiro pessoal. Frontend Next.js com backend NestJS (Prisma + PostgreSQL). Gestão de contas, transações, orçamentos e notificações. Deploy com Docker.',
+    image: '/fincontrol.png',
+    tags: ['Next.js', 'Nest.js', 'PostgreSQL', 'Docker'],
+    githubUrl: 'https://github.com/Nelson-esilva/FinControl',
+    liveUrl: 'https://fin-control-liart.vercel.app',
+    imageFit: 'cover' as const,
+  },
+  {
     title: 'ShopFlow MES - Manufacturing Execution System',
     description:
       'Sistema MES/MOM open-source para gestão e monitoramento de produção industrial em tempo real. Integra coleta de dados do chão de fábrica, rastreamento de ordens, análise de defeitos e dashboards analíticos via OLAP.',

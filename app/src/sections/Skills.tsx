@@ -36,7 +36,6 @@ const CATEGORIES: Category[] = [
       { name: 'FastAPI', description: 'APIs de alta performance' },
       { name: 'PostgreSQL', description: 'Banco relacional' },
       { name: 'SQL Server', description: 'Banco corporativo' },
-      { name: 'PHP', description: 'Sistemas legados' },
     ],
   },
   {
@@ -81,7 +80,6 @@ const CATEGORIES: Category[] = [
       { name: 'Git', description: 'Controle de versão' },
       { name: 'Linux', description: 'Servidores & CLI' },
       { name: 'REST APIs', description: 'Integração de sistemas' },
-      { name: 'CI/CD', description: 'Deploy automatizado' },
     ],
   },
   {
@@ -92,10 +90,10 @@ const CATEGORIES: Category[] = [
     accentBg: 'bg-neon-green/10',
     glowColor: 'rgba(0,255,65,0.15)',
     techs: [
+      { name: 'C', description: 'Programação de baixo nível' },
       { name: 'Eletrônica Analógica', description: 'Circuitos & sensores' },
       { name: 'Eletrônica Digital', description: 'FPGA & lógica' },
       { name: 'Sistemas Embarcados', description: 'Firmware & IoT' },
-      { name: 'Redes TCP/IP', description: 'Protocolos & infraestrutura' },
     ],
   },
 ];

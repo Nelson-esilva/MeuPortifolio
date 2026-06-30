@@ -22,8 +22,8 @@ const DEGREES: Degree[] = [
     title: 'Análise e Desenvolvimento de Sistemas',
     type: 'Tecnólogo',
     institution: 'UNINTER Centro Universitário Internacional',
-    period: 'Dez 2023 – Dez 2025 (Previsto)',
-    status: 'active',
+    period: 'Dez 2023 – Jun 2026',
+    status: 'completed',
   },
   {
     title: 'Engenharia Elétrica',

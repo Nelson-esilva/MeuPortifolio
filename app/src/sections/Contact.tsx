@@ -1,6 +1,6 @@
 import { TextScramble } from '@/components/TextScramble';
 import { useInView } from '@/hooks/useInView';
-import { Mail, Github, MapPin, Linkedin, ExternalLink } from 'lucide-react';
+import { Mail, Github, MapPin, Linkedin, ExternalLink, Phone } from 'lucide-react';
 import { DownloadCVButton } from '@/components/DownloadCVButton';
 
 const CONTACT_INFO = [
@@ -15,6 +15,12 @@ const CONTACT_INFO = [
     label: 'GitHub',
     value: 'github.com/Nelson-esilva',
     href: 'https://github.com/Nelson-esilva',
+  },
+  {
+    icon: Phone,
+    label: 'WhatsApp',
+    value: '(92) 98267-3099',
+    href: 'https://wa.me/5592982673099',
   },
   {
     icon: MapPin,
